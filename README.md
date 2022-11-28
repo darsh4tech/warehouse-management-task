@@ -1,7 +1,5 @@
 <h3>Hi 👋, This is warehouse management ms</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=darsh4tech&label=Profile%20views&color=0e75b6&style=flat" alt="darsh4tech" /> </p>
-
 **Notes, How to start it ?**
   1) I am using Postgres as DB, so to start the project you should first create DB name as **iot_voda**.
   2) I exposed all available endpoints through swagger using this link **http://localhost:8088/swagger-ui/index.html**.

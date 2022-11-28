@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+<changeSet author="darsh" id="20221122125811">
+
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1001" />
+		<column name="operator_code" value="010" />
+		<column name="country" value="Egypt" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1002" />
+		<column name="operator_code" value="010" />
+		<column name="country" value="Italy" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1003" />
+		<column name="operator_code" value="011" />
+		<column name="country" value="USA" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1004" />
+		<column name="operator_code" value="011" />
+		<column name="country" value="Egypt" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1005" />
+		<column name="operator_code" value="011" />
+		<column name="country" value="Canada" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1006" />
+		<column name="operator_code" value="011" />
+		<column name="country" value="France" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1007" />
+		<column name="operator_code" value="010" />
+		<column name="country" value="Canada" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1008" />
+		<column name="operator_code" value="011" />
+		<column name="country" value="France" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1009" />
+		<column name="operator_code" value="011" />
+		<column name="country" value="Germany" />
+	</insert>
+	<insert tableName="sim_card">
+		<column name="sim_id" value="1010" />
+		<column name="operator_code" value="011" />
+		<column name="country" value="Cuba" />
+	</insert>
+
+	<insert tableName="device">
+		<column name="device_id" value="1001" />
+		<column name="temperature" value="50" />
+		<column name="device_status" value="ACTIVE" />
+		<column name="simcard_id" value="1001" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1002" />
+		<column name="temperature" value="-10" />
+		<column name="device_status" value="WAITING_FOR_ACTIVATION" />
+		<column name="simcard_id" value="1002" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1003" />
+		<column name="temperature" value="90" />
+		<column name="device_status" value="BLOCKED" />
+		<column name="simcard_id" value="1003" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1004" />
+		<column name="temperature" value="70" />
+		<column name="device_status" value="DEACTIVATED" />
+		<column name="simcard_id" value="1004" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1005" />
+		<column name="temperature" value="50" />
+		<column name="device_status" value="WAITING_FOR_ACTIVATION" />
+		<column name="simcard_id" value="1005" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1006" />
+		<column name="temperature" value="50" />
+		<column name="device_status" value="ACTIVE" />
+		<column name="simcard_id" value="1006" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1007" />
+		<column name="temperature" value="-10" />
+		<column name="device_status" value="WAITING_FOR_ACTIVATION" />
+		<column name="simcard_id" value="1007" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1008" />
+		<column name="temperature" value="40" />
+		<column name="device_status" value="WAITING_FOR_ACTIVATION" />
+		<column name="simcard_id" value="1008" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1009" />
+		<column name="temperature" value="70" />
+		<column name="device_status" value="DEACTIVATED" />
+		<column name="simcard_id" value="1009" />
+	</insert>
+	<insert tableName="device">
+		<column name="device_id" value="1010" />
+		<column name="temperature" value="50" />
+		<column name="device_status" value="WAITING_FOR_ACTIVATION" />
+		<column name="simcard_id" value="1010" />
+	</insert>
+	
+</changeSet>	
+</databaseChangeLog>

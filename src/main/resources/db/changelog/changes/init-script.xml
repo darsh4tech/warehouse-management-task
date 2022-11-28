@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+	<changeSet author="darsh" id="create_table_sim_card">
+		<createTable tableName="sim_card">
+			<column name="sim_id" type="serial">
+				<constraints primaryKey="true" />
+			</column>
+			<column name="operator_code" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="country" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+	<changeSet author="darsh" id="create_table_device">
+		<createTable tableName="device">
+			<column name="device_id" type="serial">
+				<constraints primaryKey="true" />
+			</column>
+			<column name="temperature" type="int">
+				<constraints nullable="false" />
+			</column>
+			<column name="device_status" type="varchar(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="simcard_id" type="int">
+				<constraints nullable="false" foreignKeyName="fk_device_sim_card" references="sim_card(sim_id)"/>
+			</column>
+		</createTable>
+	</changeSet>
+
+</databaseChangeLog>
